@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-ping/ping"
+	probing "github.com/prometheus-community/pro-bing"
 )
 
 func execPing(w http.ResponseWriter, r *http.Request) int {
@@ -18,7 +18,7 @@ func execPing(w http.ResponseWriter, r *http.Request) int {
 			return (http.StatusBadRequest)
 		}
 		addr := addrArray[0]
-		pinger, err := ping.NewPinger(addr)
+		pinger, err := probing.NewPinger(addr)
 		if err != nil {
 			fmt.Println("[api.pingapi.execPing] Ping Object Error, err=", err)
 			w.WriteHeader(http.StatusInternalServerError)
