@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"./api/health"
-	"./api/machines"
-	"./api/pingapi"
-	"./api/wol"
+	"github.com/ytsurui/wol-on-web/webapi/api/health"
+	"github.com/ytsurui/wol-on-web/webapi/api/machines"
+	"github.com/ytsurui/wol-on-web/webapi/api/pingapi"
+	"github.com/ytsurui/wol-on-web/webapi/api/wol"
 
 	"github.com/gorilla/mux"
 )

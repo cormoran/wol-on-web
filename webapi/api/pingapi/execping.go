@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/sparrc/go-ping"
+	"github.com/go-ping/ping"
 )
 
 func execPing(w http.ResponseWriter, r *http.Request) int {

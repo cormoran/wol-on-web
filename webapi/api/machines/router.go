@@ -3,7 +3,7 @@ package machines
 import (
 	"net/http"
 
-	"../../api"
+	"github.com/ytsurui/wol-on-web/webapi/api"
 )
 
 func GetMachineList(w http.ResponseWriter, r *http.Request) {

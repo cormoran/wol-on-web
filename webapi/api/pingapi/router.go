@@ -3,7 +3,7 @@ package pingapi
 import (
 	"net/http"
 
-	"../../api"
+	"github.com/ytsurui/wol-on-web/webapi/api"
 )
 
 func SendPing(w http.ResponseWriter, r *http.Request) {

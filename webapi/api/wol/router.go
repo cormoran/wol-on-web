@@ -3,7 +3,7 @@ package wol
 import (
 	"net/http"
 
-	"../../api"
+	"github.com/ytsurui/wol-on-web/webapi/api"
 )
 
 func SendWolPacket(w http.ResponseWriter, r *http.Request) {
